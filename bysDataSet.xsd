@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="bysDataSet" targetNamespace="http://tempuri.org/bysDataSet.xsd" xmlns:mstns="http://tempuri.org/bysDataSet.xsd" xmlns="http://tempuri.org/bysDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="bysConnection" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="bysConnection (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.tren.My.MySettings.GlobalReference.Default.bysConnection" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="kunden_stadtTableAdapter" GeneratorDataComponentClassName="kunden_stadtTableAdapter" Name="kunden_stadt" UserDataComponentName="kunden_stadtTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="bysConnection (MySettings)" DbObjectName="bys.dbo.kunden_stadt" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Kunden_ID, Vorname, Nachname, Telefonnummer, Geschlecht_ID, Geburtsdatum, Adress, Kartennummer, Stadt_Name FROM dbo.kunden_stadt</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Kunden_ID" DataSetColumn="Kunden_ID" />
+              <Mapping SourceColumn="Vorname" DataSetColumn="Vorname" />
+              <Mapping SourceColumn="Nachname" DataSetColumn="Nachname" />
+              <Mapping SourceColumn="Telefonnummer" DataSetColumn="Telefonnummer" />
+              <Mapping SourceColumn="Geschlecht_ID" DataSetColumn="Geschlecht_ID" />
+              <Mapping SourceColumn="Geburtsdatum" DataSetColumn="Geburtsdatum" />
+              <Mapping SourceColumn="Adress" DataSetColumn="Adress" />
+              <Mapping SourceColumn="Kartennummer" DataSetColumn="Kartennummer" />
+              <Mapping SourceColumn="Stadt_Name" DataSetColumn="Stadt_Name" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="bysDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="bysDataSet" msprop:Generator_UserDSName="bysDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="kunden_stadt" msprop:Generator_TableClassName="kunden_stadtDataTable" msprop:Generator_TableVarName="tablekunden_stadt" msprop:Generator_TablePropName="kunden_stadt" msprop:Generator_RowDeletingName="kunden_stadtRowDeleting" msprop:Generator_RowChangingName="kunden_stadtRowChanging" msprop:Generator_RowEvHandlerName="kunden_stadtRowChangeEventHandler" msprop:Generator_RowDeletedName="kunden_stadtRowDeleted" msprop:Generator_UserTableName="kunden_stadt" msprop:Generator_RowChangedName="kunden_stadtRowChanged" msprop:Generator_RowEvArgName="kunden_stadtRowChangeEvent" msprop:Generator_RowClassName="kunden_stadtRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Kunden_ID" msprop:Generator_ColumnVarNameInTable="columnKunden_ID" msprop:Generator_ColumnPropNameInRow="Kunden_ID" msprop:Generator_ColumnPropNameInTable="Kunden_IDColumn" msprop:Generator_UserColumnName="Kunden_ID" type="xs:int" />
+              <xs:element name="Vorname" msprop:Generator_ColumnVarNameInTable="columnVorname" msprop:Generator_ColumnPropNameInRow="Vorname" msprop:Generator_ColumnPropNameInTable="VornameColumn" msprop:Generator_UserColumnName="Vorname">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nachname" msprop:Generator_ColumnVarNameInTable="columnNachname" msprop:Generator_ColumnPropNameInRow="Nachname" msprop:Generator_ColumnPropNameInTable="NachnameColumn" msprop:Generator_UserColumnName="Nachname">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Telefonnummer" msprop:Generator_ColumnVarNameInTable="columnTelefonnummer" msprop:Generator_ColumnPropNameInRow="Telefonnummer" msprop:Generator_ColumnPropNameInTable="TelefonnummerColumn" msprop:Generator_UserColumnName="Telefonnummer" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Geschlecht_ID" msprop:Generator_ColumnVarNameInTable="columnGeschlecht_ID" msprop:Generator_ColumnPropNameInRow="Geschlecht_ID" msprop:Generator_ColumnPropNameInTable="Geschlecht_IDColumn" msprop:Generator_UserColumnName="Geschlecht_ID" type="xs:boolean" />
+              <xs:element name="Geburtsdatum" msprop:Generator_ColumnVarNameInTable="columnGeburtsdatum" msprop:Generator_ColumnPropNameInRow="Geburtsdatum" msprop:Generator_ColumnPropNameInTable="GeburtsdatumColumn" msprop:Generator_UserColumnName="Geburtsdatum" type="xs:dateTime" />
+              <xs:element name="Adress" msprop:Generator_ColumnVarNameInTable="columnAdress" msprop:Generator_ColumnPropNameInRow="Adress" msprop:Generator_ColumnPropNameInTable="AdressColumn" msprop:Generator_UserColumnName="Adress">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Kartennummer" msprop:Generator_ColumnVarNameInTable="columnKartennummer" msprop:Generator_ColumnPropNameInRow="Kartennummer" msprop:Generator_ColumnPropNameInTable="KartennummerColumn" msprop:Generator_UserColumnName="Kartennummer">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="16" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Stadt_Name" msprop:Generator_ColumnVarNameInTable="columnStadt_Name" msprop:Generator_ColumnPropNameInRow="Stadt_Name" msprop:Generator_ColumnPropNameInTable="Stadt_NameColumn" msprop:Generator_UserColumnName="Stadt_Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:kunden_stadt" />
+      <xs:field xpath="mstns:Kunden_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
